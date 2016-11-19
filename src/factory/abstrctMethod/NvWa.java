@@ -10,18 +10,18 @@ public class NvWa {
 		
 		maleBlackHuman.getColor();  
 		maleBlackHuman.getSex();  
-		System.out.println("=======================我是快乐的分割线=======================");
+		System.out.println("=======================分割线=======================");
 		maleYellowHuman.getColor();  
 		maleYellowHuman.getSex();  
-		System.out.println("=======================我是快乐的分割线=======================");		
+		System.out.println("=======================分割线=======================");		
 		HumanFactory femaleHumanFactory = new FemaleFactory() ;
 		Human femaleBlackHuman = femaleHumanFactory.createBlackHuman() ; 
 		Human femaleYellowHuman = femaleHumanFactory.createYellowHuman() ; 
 		femaleBlackHuman.getSex();  
-		femaleBlackHuman.talk(); 
-		System.out.println("=======================我是快乐的分割线=======================");		
+		femaleBlackHuman.getColor();  
+		System.out.println("=======================分割线=======================");		
 		femaleYellowHuman.getSex(); 
-		femaleYellowHuman.talk()  ; 
+		femaleYellowHuman.getColor();
 		
 	}
 }

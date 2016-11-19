@@ -2,8 +2,16 @@ package proxy.dynamic.cglibProxy;
 
 public class Train {
 	
+	public void start(){
+		System.out.println("火车启动中。。。。。。。。。。。。。。。。。。。");
+	}
+	
 	public void move(){
-		System.out.println("火车行驶中");
+		System.out.println("火车行驶中。。。。。。。。。。。。。。");
+	}
+	
+	public void stop(){
+		System.out.println("火车停止中。。。。。。。。");
 	}
 	
 }

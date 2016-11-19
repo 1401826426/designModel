@@ -1,16 +1,14 @@
 package proxy.dynamic.cglibProxy;
 
 import java.lang.reflect.Method;
-
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
-
 public class CglibProxy implements MethodInterceptor{
 
 	private Enhancer enhancer = new Enhancer() ; 
 	
-	public Object  getProxy(Class clazz){
+	public Object  getProxy(@SuppressWarnings("rawtypes") Class clazz){
 		enhancer.setSuperclass(clazz);
 		enhancer.setCallback(this);
 		return enhancer.create() ; 
@@ -27,11 +25,10 @@ public class CglibProxy implements MethodInterceptor{
 	public Object intercept(Object obj, Method m, Object[] args, MethodProxy proxy) throws Throwable {
 		 //代理类调用父类的方法
 		System.out.println("日志开始。。。。。。。。。。。。。。。。。");
-		proxy.invokeSuper(obj, args) ; 
-		System.out.println();
+//		proxy.invokeSuper(obj, args) ; 
+		proxy.invoke(obj, args) ; 
 		System.out.println("日志结束......................");
 		return null;
 	}
 	
-
 }
