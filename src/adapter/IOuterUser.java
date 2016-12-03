@@ -1,0 +1,14 @@
+package adapter;
+
+import java.util.Map;
+
+@SuppressWarnings("rawtypes")
+public interface IOuterUser {
+	
+	Map  getUserBaseInfo() ; 
+	
+	Map  getUserOfficeInfo() ; 
+	
+	Map  getUserHomeInfo(); 
+
+}
