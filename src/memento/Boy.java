@@ -4,19 +4,19 @@ public class Boy {
 	
 	private String state = "" ; 
 	
-	public void changeState(){
-		this.state = "心情可能不好" ; 
+	public void changeState(String s){
+		this.state = s ; 
 	}
 	
 	public String getState(){
 		return this.state ; 
 	}
 	
-	public Memento createMemento(){
-		return new Memento(this.state) ; 
+	public Mementor createMemento(){
+		return new Mementor(this.state) ; 
 	}
 	
-	public void restoreMemento(Memento memento){
+	public void restoreMemento(Mementor memento){
 		this.setState(memento.getState());
 	}
 	

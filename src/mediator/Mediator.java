@@ -13,8 +13,7 @@ public class Mediator extends AbstractMediator{
 			this.offSell() ; 
 		}else if("stock.clear".equals(str)){
 			this.clearStock() ; 
-		}
-		
+		}	
 	}
 
 	private void clearStock() {

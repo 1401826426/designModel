@@ -1,6 +1,6 @@
 package decorator;
 
-public class FuthGradeSchoolReport extends SchoolReport{
+public class FourthGradeSchoolReport extends SchoolReport{
 
 	@Override
 	public void report() {
