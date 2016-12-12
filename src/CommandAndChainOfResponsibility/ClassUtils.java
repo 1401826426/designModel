@@ -9,6 +9,7 @@ import java.util.List;
 
 public class ClassUtils {
 
+	@SuppressWarnings("rawtypes")
 	public static List<Class> getSonClass(Class<? extends CommandName> abstractClass) {
 		List<Class> returnClassList = new ArrayList<Class>() ; 
 		String packageName = abstractClass.getPackage().getName(); 
@@ -21,6 +22,7 @@ public class ClassUtils {
 		return returnClassList;
 	}
 
+	@SuppressWarnings("rawtypes")
 	private static List<Class> getSonClass(String packageName) {
 		ClassLoader classLoader = Thread.currentThread().getContextClassLoader() ; 
 		String path = packageName.replace(".", "/") ; 

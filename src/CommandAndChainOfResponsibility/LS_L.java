@@ -2,6 +2,7 @@ package CommandAndChainOfResponsibility;
 
 public class LS_L extends AbstractLS{
 
+	@SuppressWarnings("static-access")
 	@Override
 	protected String getOperateParam() {
 		return super.L_PARAM ; 

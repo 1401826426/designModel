@@ -1,6 +1,7 @@
 package com.java.facademode.hometheater;
 
 public class Projector {
+	@SuppressWarnings("unused")
 	private int size=5;
 
 	private static Projector instance = null;

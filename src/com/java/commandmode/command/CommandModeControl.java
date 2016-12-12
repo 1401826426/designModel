@@ -3,8 +3,6 @@ package com.java.commandmode.command;
 import java.util.Stack;
 
 import com.java.commandmode.Control;
-import com.java.commandmode.device.Light;
-import com.java.commandmode.device.Stereo;
 
 public class CommandModeControl implements Control{
 	private Command[] onCommands;

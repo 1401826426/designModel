@@ -2,6 +2,7 @@ package com.java.mediator;
 
 public class MainTest {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		Mediator mediator = new ConcreteMediator();
 		Alarm mAlarm = new Alarm(mediator, "mAlarm");
